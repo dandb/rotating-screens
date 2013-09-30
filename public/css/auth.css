@@ -1,0 +1,294 @@
+body {
+    padding-bottom: 40px;
+    background-color: #ffffff;
+}
+
+.error_message {
+    color: #FF0000;
+}
+
+#infoMessage {
+    color: #2655ad !important;
+}
+
+.successMessage {
+    color: #0E9E00;
+}
+
+.btn-return:hover,
+.btn-return:focus,
+.btn-return:active,
+.btn-return.active,
+.open .dropdown-toggle.btn-return {
+    color: #ffffff;
+    background-color: #0E9E00;
+    border-color: #0F9700;
+}
+
+.btn-return:active,
+.btn-return.active,
+.open .dropdown-toggle.btn-return {
+    background-image: none;
+}
+
+.btn-return.disabled,
+.btn-return[disabled],
+fieldset[disabled] .btn-return,
+.btn-return.disabled:hover,
+.btn-return[disabled]:hover,
+fieldset[disabled] .btn-return:hover,
+.btn-return.disabled:focus,
+.btn-return[disabled]:focus,
+fieldset[disabled] .btn-return:focus,
+.btn-return.disabled:active,
+.btn-return[disabled]:active,
+fieldset[disabled] .btn-return:active,
+.btn-return.disabled.active,
+.btn-return[disabled].active,
+fieldset[disabled] .btn-return.active {
+    background-color: #10AF00;
+    border-color: #10AA00;
+}
+
+/******* Index- admin only****/
+.all-users {
+    max-width: 850px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.table-col {
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+
+.table-row {
+    height: 30px;
+}
+
+.email-col{
+    width: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.header-row {
+    background-color: #B5C8DF;
+    height: 35px;
+}
+/******* Login Form **********/
+.signin_body {
+    background-color: #255884;
+}
+
+.form-signin {
+    width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.signin_container {
+    margin: 0 auto;
+    width: 350px;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px #000000;
+    padding: 2px 2px 2px 2px;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.forgot_password_link {
+    border-radius: 35px;
+    background-color: #808080;
+    color: white;
+    height: 19px;
+    width: 19px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal !important;
+    position: absolute;
+    left: 299px;
+    top: 120px;
+    opacity:0.5;
+}
+
+/******* Change Password Form **********/
+.form-changepassword {
+    width: 350px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+}
+
+.form-changepassword #oldpassword {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-changepassword #newpassword {
+    border-radius: 0;
+    border-bottom: 0px;
+    border-top: 0px;
+}
+
+.form-changepassword #newpassword_confirm {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-changepassword .btn-changepassword_submit {
+    width: 221px;
+}
+
+.form-changepassword .btn-changepassword_return {
+    width: 95px;
+    color: #ffffff;
+    background-color: #10AF00;
+    border-color: #10AA00;
+}
+
+/******* Create User Form **********/
+.form-createuser {
+    width: 350px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/******* Deactivate User Form **********/
+.form-deactivateuser {
+    width: 400px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deactiveuser-radiobutton {
+    margin-left: 115px;
+}
+
+.deactiveuser-radiobutton label{
+    margin-left: 10px;
+}
+
+.deactiveuser-radiobutton input{
+    margin-left: 5px;
+}
+/******* Edit User Form **********/
+.form-edituser {
+    width: 350px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.edituser-checkbox {
+    width: 25px;
+}
+.btn-edituser-submit {
+    width: 236px;
+}
+
+.btn-edituser-return {
+    width: 80px;
+    color: #ffffff;
+    background-color: #10AF00;
+    border-color: #10AA00;
+
+}/******* Edit Group Form **********/
+.form-editgroup {
+    width: 350px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.btn-editgroup-submit {
+    width: 236px;
+}
+
+.btn-editgroup-return {
+    width: 80px;
+    color: #ffffff;
+    background-color: #10AF00;
+    border-color: #10AA00;
+}
+
+/******* Forgot Password Form **********/
+.forgotpassword_body {
+    background-color: #255884;
+}
+
+.form-forgotpassword {
+    width: 400px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+}
+
+.form-forgotpassword h1{
+    margin-left: 35px;
+}
+
+.form-forgotpassword .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.btn-forgotpassword_submit {
+    width: 271px;
+}
+
+.btn-forgotpassword-return {
+    width: 95px;
+    color: #ffffff;
+    background-color: #10AF00;
+    border-color: #10AA00;
+}
+
+/******* Reset Password Container ******/
+.reset_password_container {
+    margin: 0 auto;
+    width: 300px;
+}

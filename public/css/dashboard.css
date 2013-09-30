@@ -1,0 +1,199 @@
+body {
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+}
+
+.error_message {
+    color: #FF0000;
+}
+
+#validate_url{
+    margin-bottom: 5px;
+}
+
+.infoMessage {
+    color: #2655ad;
+}
+
+.successMessage {
+    color: #0E9E00;
+}
+
+.container {
+    width: 900px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#to_top_btn {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    z-index: 20;
+    opacity: 0.5;
+    left: 5px;
+    bottom: 5px;
+    display:none;
+    cursor:pointer;
+}
+/******* add-form ************/
+#addEntry_container {
+    margin-bottom: 5px;
+    width: 900px;
+}
+
+.time-interval_add {
+    width: 100px;
+}
+.website_add {
+    width: 350px;
+}
+.twitter_add {
+    width: 350px;
+}
+.youtube_add {
+    width: 350px;
+}
+
+.category-attribute_add {
+    width: 150px;
+}
+
+.btn-add {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.checkbox-location_add {
+    margin: 15px 5px 5px 5px !important;
+}
+/******* table CSS************/
+.dashboard_table {
+    width: 900px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-collapse: separate;
+    border: 1px solid #428BCA;
+}
+
+.dashboard_header {
+    background-color: #428BCA;
+    border-color: #428BCA;
+    color: #FFFFFF;
+    height: 35px;
+    cursor: default !important;
+}
+.office_location_col {
+    width: auto;
+    padding-left: 5px;
+}
+
+.dashboard_row {
+    height: 30px;
+    max-height: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    white-space: nowrap;
+}
+
+.delete_entry {
+    cursor:pointer;
+}
+
+.edit_entry {
+    cursor: pointer;
+}
+
+.category_col {
+    max-width: 65px;
+    width: 65px;
+    padding-left: 10px;
+}
+
+.description_col {
+    max-width: 145px;
+    width: 145px;
+    padding-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.url_col {
+    max-width: 580px;
+    width: 580px;
+    padding-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delete_col {
+    padding-right: 10px;
+}
+
+.timeInterval_col {
+    padding-right: 7px;
+    text-align: right;
+}
+
+.website_label {
+    width: 55px;
+    height: 14px;
+    background-color: #BAACC9;
+    color: #5D5664;
+    font:12px arial,sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.twitter_label {
+    width: 55px;
+    height: 14px;
+    background-color: #98C1D4;
+    color: #4C606A;
+    font:12px arial,sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.youtube_label {
+    width: 55px;
+    height: 14px;
+    background-color: #FFBA8D;
+    color: #805D46;
+    font:12px arial,sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-left: 1px;
+}
+
+/***Start Dash *************/
+#start_dashboard_btn {
+    display: block;
+    margin-bottom: 5px;
+    width: 900px;
+}
+
+#admin_start_dashboard_btn {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    font-size: 18px;
+}
+
+.start_dashboard_container {
+    width: 900px;
+}
+
+/****** Loading div ********/
+.loading-div {
+    background-color:transparent;
+    padding-top: 10px;
+    padding-left: 230px;
+    border-color: transparent !important;
+    box-shadow: none !important;
+
+}

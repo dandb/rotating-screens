@@ -1,0 +1,42 @@
+.account_dropdown {
+    position: absolute;
+    z-index: 10;
+    right: 30px;
+    padding-bottom: 5px;
+    width: 250px;
+    border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-collapse: separate;
+    background-color: #428BCA;
+    opacity:0.75;
+    font:14px arial,sans-serif;
+    text-align: center;
+    -webkit-box-shadow: 0px 7px 30px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 7px 30px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 7px 30px rgba(50, 50, 50, 0.5);
+}
+
+.dropdown_option {
+    background-color: #FFFFFF;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#manage_dropdown {
+    padding-top: 7px;
+    font-weight: bold;
+    color: #E6EDF7;
+}
+
+.dropdown_option:hover {
+    color: #0b2833;
+    background: #80ACDB;
+}
+
+.logo_header {
+    width: 200px;
+    position: relative;
+    left: 15px;
+    top: 10px;
+    margin-bottom: 10px;
+}
