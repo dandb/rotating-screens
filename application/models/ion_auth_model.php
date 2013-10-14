@@ -6,6 +6,7 @@
 * 		   ben.edmunds@gmail.com
 *	  	   @benedmunds
 *
+* Edited by: Angelina Burks
 * Added Awesomeness: Phil Sturgeon
 *
 * Location: http://github.com/benedmunds/CodeIgniter-Ion-Auth

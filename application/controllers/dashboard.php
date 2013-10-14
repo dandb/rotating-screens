@@ -13,11 +13,16 @@ class Dashboard extends CI_Controller {
         $this->load->library('form_validation');
         $this->load->helper('url');
 
+
+        //create tables in the db if they do not exist yet
+        $this->load->model('Prepare_db_model');
+        $this->Prepare_db_model->prepareTables();
+
         // Load MongoDB library instead of native db driver if required
         $this->config->item('use_mongodb', 'ion_auth') ?
-            $this->load->library('mongo_db') :
+        $this->load->library('mongo_db') :
 
-            $this->load->database();
+        $this->load->database();
 
         $this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
 

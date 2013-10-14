@@ -11,15 +11,18 @@ class Auth extends CI_Controller {
 
         // Load MongoDB library instead of native db driver if required
         $this->config->item('use_mongodb', 'ion_auth') ?
-            $this->load->library('mongo_db') :
+        $this->load->library('mongo_db') :
 
-            $this->load->database();
+        $this->load->database();
 
         $this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
 
         $this->lang->load('auth');
         $this->lang->load('constant');
         $this->load->helper('language');
+        //create tables in the db if they do not exist yet
+        $this->load->model('Prepare_db_model');
+        $this->Prepare_db_model->prepareTables();
     }
 
 	//redirect if needed, otherwise display the user list
