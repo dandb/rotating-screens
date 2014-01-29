@@ -9,10 +9,7 @@ class Testconnection extends CI_Controller {
 
     function index()
     {
-        //operation timed out
-        //var_dump(mysql_connect('rotatingscreens.db.6976662.hostedresource.com',"rotatingscreens","RotScr!2013"));
-        //var_dump(mssql_connect('rotatingscreens.db.6976662.hostedresource.com',"rotatingscreens","RotScr!2013"));
-        //var_dump(mysql_connect('127.0.0.1:8889',"root","root"));
-        //phpinfo();
+        echo "testconnection";
+        phpinfo();
     }
 }

@@ -2,185 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1280f147-3bd6-44da-a49d-d49c1f815d18" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/testconnection.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/changelog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/active_record.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/caching.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/call_function.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/configuration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/connecting.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/examples.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/fields.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/forge.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/helpers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/queries.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/results.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/table_data.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/transactions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/database/utilities.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/doc_style/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/doc_style/template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/alternative_php.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/ancillary_classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/autoloader.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/caching.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/cli.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/common_functions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/controllers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/core_classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/creating_drivers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/creating_libraries.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/credits.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/drivers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/environments.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/errors.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/helpers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/hooks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/libraries.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/managing_apps.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/models.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/profiling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/quick_reference.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/requirements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/reserved_names.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/routing.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/security.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/styleguide.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/urls.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/general/views.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/array_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/captcha_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/cookie_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/date_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/directory_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/download_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/email_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/file_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/form_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/html_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/inflector_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/language_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/number_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/path_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/security_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/smiley_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/string_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/text_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/typography_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/url_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/helpers/xml_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/appflowchart.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/arrow.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/ci_logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/ci_logo_flame.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/ci_quick_ref.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/codeigniter_1.7.1_helper_reference.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/codeigniter_1.7.1_helper_reference.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/codeigniter_1.7.1_library_reference.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/codeigniter_1.7.1_library_reference.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/file.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/folder.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/nav_bg_darker.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/nav_separator_darker.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/nav_toggle_darker.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/reactor-bullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/smile.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/images/transparent.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/downloads.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/troubleshooting.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_120.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_130.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_131.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_132.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_133.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_140.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_141.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_150.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_152.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_153.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_154.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_160.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_161.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_162.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_163.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_170.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_171.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_172.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_200.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_201.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_202.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_203.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_210.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_211.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_212.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_213.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_214.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrade_b11.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/installation/upgrading.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/benchmark.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/caching.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/calendar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/cart.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/config.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/email.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/encryption.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/file_uploading.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/form_validation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/ftp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/image_lib.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/input.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/javascript.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/language.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/loader.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/migration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/output.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/pagination.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/parser.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/security.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/sessions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/table.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/trackback.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/typography.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/unit_testing.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/uri.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/user_agent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/xmlrpc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/libraries/zip.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/license.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/nav/hacks.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/nav/moo.fx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/nav/nav.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/nav/prototype.lite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/nav/user_guide_menu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/overview/appflow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/overview/at_a_glance.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/overview/cheatsheets.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/overview/features.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/overview/getting_started.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/overview/goals.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/overview/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/overview/mvc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/toc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/tutorial/conclusion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/tutorial/create_news_items.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/tutorial/hard_coded_pages.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/tutorial/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/tutorial/news_section.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/tutorial/static_pages.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user_guide/userguide.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Email.php" afterPath="$PROJECT_DIR$/system/libraries/Email.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="$PROJECT_DIR$/application/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/testconnection.php" afterPath="$PROJECT_DIR$/application/controllers/testconnection.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ci_gaia.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1381792056006" ignored="false" />
+    <file path="/index.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391026174116" ignored="false" />
     <file path="/auth.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389207311541" ignored="false" />
-    <file path="/test.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1382134612224" ignored="false" />
-    <file path="/*.regexp" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389656459859" ignored="false" />
+    <file path="/test.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391030156927" ignored="false" />
+    <file path="/*.regexp" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391031681074" ignored="false" />
     <file path="/welcome.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378416168084" ignored="false" />
     <file path="/Ion_auth.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1379352244793" ignored="false" />
     <file path="/ion_auth_model.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378420657953" ignored="false" />
@@ -190,9 +22,9 @@
     <file path="/Applications/MAMP/htdocs/ci_gaia/application/config/database.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378421459120" ignored="false" />
     <file path="/login.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1380578172640" ignored="false" />
     <file path="/signin.css" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378426424901" ignored="false" />
-    <file path="/Dummy.txt" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389832422334" ignored="false" />
+    <file path="/Dummy.txt" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390868760477" ignored="false" />
     <file path="$PROJECT_DIR$/../helios/tools/regression/features/dandb/accounts/business_edit_disable_social_connections.feature" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378746756383" ignored="false" />
-    <file path="$PROJECT_DIR$/../helios/build.xml" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389229760067" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/build.xml" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424969625" ignored="false" />
     <file path="$PROJECT_DIR$/../helios/www/application/modules/default/layouts/scripts/partials/header/fat-header.phtml" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378747803139" ignored="false" />
     <file path="$PROJECT_DIR$/../helios/www/application/cache/minify/minify_reset,footer,search,header,common,jquery.fancybox1.3.4,agile_carousel,homepage.css_0aa2b4fc2e2b264edf0a71d61087c989" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378747359217" ignored="false" />
     <file path="$PROJECT_DIR$/../helios/www/application/cache/minify/minify_reset,footer,search,header,common,jquery.fancybox1.3.4,agile_carousel,singleproductpage,lightbox.css_a94bca4c915ed93f0a8cf819dfce6691" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378747399553" ignored="false" />
@@ -277,7 +109,7 @@
     <file path="$PROJECT_DIR$/../helios/www/application/modules/verified/controllers/IndexController.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378767379097" ignored="false" />
     <file path="$PROJECT_DIR$/../helios/www/application/modules/verified/controllers/MycodeController.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378767379097" ignored="false" />
     <file path="$PROJECT_DIR$/../helios/www/library/Zend/View/Helper/HeadLink.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378767929211" ignored="false" />
-    <file path="/a.dummy" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1381791931547" ignored="false" />
+    <file path="/a.dummy" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391023699009" ignored="false" />
     <file path="$PROJECT_DIR$/../helios/tools/regression/features/dandb/accounts/user_logout.feature" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378838957783" ignored="false" />
     <file path="/user_logout.feature" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378838957783" ignored="false" />
     <file path="$PROJECT_DIR$/../ci_gaia_old/application/controllers/auth.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1379003761271" ignored="false" />
@@ -297,7 +129,7 @@
     <file path="/edit_group.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1379371450034" ignored="false" />
     <file path="/dashboard_model.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1380761125040" ignored="false" />
     <file path="$PROJECT_DIR$/../helios/tools/regression/features/pages/AccountsPage.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1379442360691" ignored="false" />
-    <file path="$PROJECT_DIR$/../helios/tools/regression/features/bootstrap/AccountsContext.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1379442360691" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/bootstrap/AccountsContext.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424908963" ignored="false" />
     <file path="$PROJECT_DIR$/../helios/www/application/modules/credit-resources/views/scripts/partials/search-bar.phtml" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1379443337651" ignored="false" />
     <file path="$PROJECT_DIR$/../helios/www/public/css/credit-resources/credit-resources.css" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1379975842402" ignored="false" />
     <file path="/credit-resources.css" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1379446174859" ignored="false" />
@@ -335,7 +167,7 @@
     <file path="/database.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1381800012160" ignored="false" />
     <file path="/DB.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1381800540506" ignored="false" />
     <file path="/mysql_driver.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1381800450283" ignored="false" />
-    <file path="/testconnection.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389213308311" ignored="false" />
+    <file path="/testconnection.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391028670525" ignored="false" />
     <file path="$PROJECT_DIR$/../abe/test.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1382134683937" ignored="false" />
     <file path="$PROJECT_DIR$/../abe/lib/Dispatcher.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1382327838273" ignored="false" />
     <file path="$PROJECT_DIR$/../abe/vendor/bin/phpunit" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1382327883195" ignored="false" />
@@ -352,7 +184,7 @@
     <file path="$PROJECT_DIR$/../abe/lib/DecisionEngine.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1382985354023" ignored="false" />
     <file path="$PROJECT_DIR$/../abe/lib/Event.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1382738411971" ignored="false" />
     <file path="$PROJECT_DIR$/../abe/sandbox/runimport.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1382741757809" ignored="false" />
-    <file path="$PROJECT_DIR$/../helios/www/public/css/default/partners.css" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389656493820" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/www/public/css/default/partners.css" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424969625" ignored="false" />
     <file path="$PROJECT_DIR$/../helios/www/application/cache/minify/minify_reset,footer,search,header,common,jquery.fancybox1.3.4,agile_carousel,partners.css_181416bc94b517a52ddab1183a247017" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389651029748" ignored="false" />
     <file path="/partners.css" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389650960940" ignored="false" />
     <file path="$PROJECT_DIR$/../mycredit/www/application/views/partials/checkout/checkout-order-form.phtml" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389821299601" ignored="false" />
@@ -365,7 +197,31 @@
     <file path="$PROJECT_DIR$/../mycredit/www/application/controllers/ContactUsController.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389821299601" ignored="false" />
     <file path="$PROJECT_DIR$/../mycredit/www/application/controllers/BusinessDataQualityController.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389821299601" ignored="false" />
     <file path="$PROJECT_DIR$/../mycredit/www/public/sitemap.xml" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389821299601" ignored="false" />
-    <file path="$USER_HOME$/testing/test_rot_screens/application/config/database.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389831113639" ignored="false" />
+    <file path="$USER_HOME$/testing/test_rot_screens/application/config/database.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389833322945" ignored="false" />
+    <file path="$USER_HOME$/testing/test_rot_screens/application/controllers/auth.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389833322945" ignored="false" />
+    <file path="$USER_HOME$/testing/test_rot_screens/application/config/config.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389833354896" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/dandb/product_purchase_features/business_information_report_puchase.feature" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424908963" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/dandb/product_purchase_features/breakpoint_purchase.feature" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424908963" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/dandb/product_purchase_features/credit_signal_puchase.feature" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424908963" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/dandb/product_purchase_features/claim_cred_review_purchase.feature" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424908963" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/pages/BusinessEditPage.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424908963" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/dandb/mixed_stack/new_user_registration.feature" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424908963" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/pages/BasePage.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424969626" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/bootstrap/TelesalesContext.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424908963" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/bootstrap/PharmaceuticalsMarketplaceContext.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424908963" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/bootstrap/PurchaseContext.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424908963" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/bootstrap/BusinessDirectoryContext.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390424969625" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/dandb/product_purchase_features/amex_logo_cart.feature" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390425917591" ignored="false" />
+    <file path="/amex_logo_cart.feature" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390425628919" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/features/bootstrap/UserContext.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390425616418" ignored="false" />
+    <file path="$PROJECT_DIR$/../helios/tools/regression/behat.yml" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390426418568" ignored="false" />
+    <file path="$PROJECT_DIR$/../verified/app/routes.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391024664347" ignored="false" />
+    <file path="$PROJECT_DIR$/../verified/app/controllers/TestController.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390862935858" ignored="false" />
+    <file path="/TestController.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390862788832" ignored="false" />
+    <file path="/routes.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1390863305656" ignored="false" />
+    <file path="/temp_dashboard.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391023810627" ignored="false" />
+    <file path="/tempDashboard.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391025610720" ignored="false" />
+    <file path="/test.html" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391030273033" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -385,19 +241,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
+      <file leaf-file-name="testconnection.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/testconnection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="33" selection-start="1869" selection-end="1869" vertical-scroll-proportion="0.0">
+            <state line="11" column="30" selection-start="215" selection-end="215" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/index.html">
+      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/config/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="23" selection-start="502" selection-end="502" vertical-scroll-proportion="0.5504587">
               <folding />
             </state>
           </provider>
@@ -406,52 +271,16 @@
       <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="34" selection-start="2898" selection-end="2898" vertical-scroll-proportion="-17.75">
+            <state line="22" column="15" selection-start="1088" selection-end="1088" vertical-scroll-proportion="-13.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/auth.php">
+      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="5" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.6993569">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="email.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/email.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Email.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/libraries/Email.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="742" column="0" selection-start="16398" selection-end="16398" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoload.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="33" selection-start="1325" selection-end="1328" vertical-scroll-proportion="0.0">
+            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -460,7 +289,16 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="36" selection-start="1426" selection-end="1430" vertical-scroll-proportion="0.0">
+            <state line="45" column="47" selection-start="1540" selection-end="1540" vertical-scroll-proportion="-28.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="49" selection-start="17702" selection-end="17707" vertical-scroll-proportion="-5.4">
               <folding />
             </state>
           </provider>
@@ -484,30 +322,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/models/dashboard_model.php" />
-        <option value="$PROJECT_DIR$/application/models/index_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/index.php" />
-        <option value="$PROJECT_DIR$/application/config/routes.php" />
-        <option value="$PROJECT_DIR$/application/models/ion_auth_mongodb_model.php" />
-        <option value="$PROJECT_DIR$/application/models/ion_auth_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />
-        <option value="$PROJECT_DIR$/application/models/prepare_db_model.php" />
-        <option value="$PROJECT_DIR$/application/config/ion_auth.php" />
-        <option value="$PROJECT_DIR$/application/config/config.php" />
-        <option value="$PROJECT_DIR$/system/database/drivers/mysql/mysql_driver.php" />
-        <option value="$PROJECT_DIR$/system/database/DB.php" />
-        <option value="$PROJECT_DIR$/application/controllers/testconnection.php" />
         <option value="$PROJECT_DIR$/system/libraries/Email.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/application/controllers/auth.php" />
+        <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />
+        <option value="$PROJECT_DIR$/application/controllers/temp_dashboard.php" />
+        <option value="$PROJECT_DIR$/application/views/dashboard/index.php" />
+        <option value="$PROJECT_DIR$/application/views/temp_dashboard/index.php" />
+        <option value="$PROJECT_DIR$/application/views/tempDashboard/index.php" />
+        <option value="$PROJECT_DIR$/application/controllers/tempDashboard.php" />
+        <option value="$PROJECT_DIR$/application/views/tempdashboard/index.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/application/config/config.php" />
+        <option value="$PROJECT_DIR$/application/controllers/testconnection.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="206" />
+    <option name="x" value="59" />
     <option name="y" value="22" />
-    <option name="width" value="1202" />
+    <option name="width" value="1215" />
     <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -536,7 +374,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -565,7 +402,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -580,6 +417,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rotating-screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rotating-screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rotating-screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rotating-screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rotating-screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rotating-screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="language" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="english" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -601,19 +504,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rotating-screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rotating-screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../old/ci_gaia_old" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gaia" />
     <property name="FullScreen" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -622,11 +544,11 @@
       <recent name="$PROJECT_DIR$/application/views/dashboard" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/views/temp_dashboard" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/application/views" />
       <recent name="$PROJECT_DIR$/application/libraries" />
-      <recent name="$PROJECT_DIR$/application/config" />
     </key>
   </component>
   <component name="RunManager">
@@ -635,6 +557,13 @@
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -666,14 +595,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="206" y="22" width="1202" height="874" extended-state="0" />
-    <editor active="true" />
+    <frame x="59" y="22" width="1215" height="874" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32010582" sideWeight="0.99144566" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21712802" sideWeight="0.5674603" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22668947" sideWeight="0.6798942" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956523" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17328042" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -682,7 +612,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43253967" sideWeight="0.99920255" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -752,48 +681,28 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+    <entry file="file://$PROJECT_DIR$/application/config/email.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="33" selection-start="1325" selection-end="1328" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/dashboard/cover.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+    <entry file="file://$PROJECT_DIR$/application/views/dashboard/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="36" selection-start="1426" selection-end="1430" vertical-scroll-proportion="0.0">
+        <state line="15" column="55" selection-start="0" selection-end="9157" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/core/Loader.php">
+    <entry file="file://$PROJECT_DIR$/application/language/english/constant_lang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="346" column="5" selection-start="7471" selection-end="7471" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="39" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/dashboard_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="33" selection-start="1869" selection-end="1869" vertical-scroll-proportion="0.0">
+        <state line="5" column="33" selection-start="216" selection-end="216" vertical-scroll-proportion="-3.125">
           <folding />
         </state>
       </provider>
@@ -805,51 +714,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/email.php">
+    <entry file="file://$PROJECT_DIR$/application/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/libraries/Email.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="742" column="0" selection-start="16398" selection-end="16398" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="33" selection-start="1325" selection-end="1328" vertical-scroll-proportion="0.0">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="36" selection-start="1426" selection-end="1430" vertical-scroll-proportion="0.0">
+        <state line="45" column="47" selection-start="1540" selection-end="1540" vertical-scroll-proportion="-28.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="34" selection-start="2898" selection-end="2898" vertical-scroll-proportion="-17.75">
+        <state line="22" column="15" selection-start="1088" selection-end="1088" vertical-scroll-proportion="-13.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/auth.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.6993569">
+        <state line="18" column="49" selection-start="17702" selection-end="17707" vertical-scroll-proportion="-5.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/testconnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="30" selection-start="215" selection-end="215" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="23" selection-start="502" selection-end="502" vertical-scroll-proportion="0.5504587">
           <folding />
         </state>
       </provider>
