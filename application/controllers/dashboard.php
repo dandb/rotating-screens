@@ -251,18 +251,6 @@ class Dashboard extends CI_Controller {
 
                 $addNewEntryToTable = true;
 
-                //modifying description
-
-//
-//
-//                $description = urlencode($_POST['add_description']);
-//                var_dump($description);exit;
-//                $description = $_POST['add_description'];
-//                $description = str_replace(" ","%20",$description);
-//                $description = str_replace("@","%40",$description);
-//                $description = str_replace("&","%26",$description);
-//                $description = str_replace("#","%23",$description);
-
                 //checking if host URL is valid
                 $hostURL = parse_url($URL,PHP_URL_HOST);
                 $ch = curl_init($hostURL);
@@ -361,7 +349,6 @@ class Dashboard extends CI_Controller {
             'edit_dashboardId'=> $_POST['dashboardId']
         );
 
-        $validURL = true;
         //checking if host URL is valid
         $hostURL = parse_url($_POST['URL'],PHP_URL_HOST);
         $ch = curl_init($hostURL);
