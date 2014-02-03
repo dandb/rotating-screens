@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1280f147-3bd6-44da-a49d-d49c1f815d18" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/dashboard.php" afterPath="$PROJECT_DIR$/application/controllers/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="1280f147-3bd6-44da-a49d-d49c1f815d18" name="Default" comment="" />
     <ignored path="ci_gaia.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391026174116" ignored="false" />
     <file path="/auth.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1389207311541" ignored="false" />
     <file path="/test.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391030156927" ignored="false" />
-    <file path="/*.regexp" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391036802049" ignored="false" />
+    <file path="/*.regexp" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1391454782026" ignored="false" />
     <file path="/welcome.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378416168084" ignored="false" />
     <file path="/Ion_auth.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1379352244793" ignored="false" />
     <file path="/ion_auth_model.php" changelist="1280f147-3bd6-44da-a49d-d49c1f815d18" time="1378420657953" ignored="false" />
@@ -251,7 +248,7 @@
       <file leaf-file-name="auth.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="478.75">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="151.125">
               <folding />
             </state>
           </provider>
@@ -266,10 +263,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="253" column="47" selection-start="11592" selection-end="11592" vertical-scroll-proportion="0.47638604">
+            <state line="253" column="47" selection-start="11592" selection-end="11592" vertical-scroll-proportion="-7.2">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="110" selection-start="4201" selection-end="4201" vertical-scroll-proportion="0.81005585">
               <folding />
             </state>
           </provider>
@@ -324,15 +330,15 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/controllers/testconnection.php" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/public/js/dashboard.js" />
         <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="73" />
+    <option name="x" value="32" />
     <option name="y" value="22" />
     <option name="width" value="1332" />
     <option name="height" value="874" />
@@ -536,7 +542,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="22" width="1332" height="874" extended-state="0" />
+    <frame x="32" y="22" width="1332" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -643,13 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/testconnection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="30" selection-start="215" selection-end="215" vertical-scroll-proportion="0.35714287">
@@ -660,13 +659,6 @@
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="478.75">
           <folding />
         </state>
       </provider>
@@ -706,13 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/dashboard/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="123" selection-start="2230" selection-end="2233" vertical-scroll-proportion="33.46">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/loading_icon.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -725,9 +710,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="151.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/dashboard/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="123" selection-start="2230" selection-end="2233" vertical-scroll-proportion="33.46">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="253" column="47" selection-start="11592" selection-end="11592" vertical-scroll-proportion="0.47638604">
+        <state line="253" column="47" selection-start="11592" selection-end="11592" vertical-scroll-proportion="-7.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="110" selection-start="4201" selection-end="4201" vertical-scroll-proportion="0.81005585">
           <folding />
         </state>
       </provider>
