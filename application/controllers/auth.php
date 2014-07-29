@@ -147,67 +147,68 @@ class Auth extends CI_Controller {
 		}
 
 		$user = $this->ion_auth->user()->row();
+//display the form
+        //set the flash data error message if there is one
+
+        $this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+        $this->data['title'] = $this->lang->line('company_name'). "Change Password";
+
+        $this->data['userIdentity']  = array(
+            'userId'            => $this->ion_auth->user()->row()->id,
+            'isAdmin'       => $this->ion_auth->is_admin()
+        );
+
+        $this->data['min_password_length'] = $this->config->item('min_password_length', 'ion_auth');
+        $this->data['old_password'] = array(
+            'name'          => 'oldpassword',
+            'id'            => 'oldpassword',
+            'type'          => 'password',
+            'class'         => 'form-control',
+            'placeholder'   => lang('change_password_old_password_placeholder')
+
+        );
+        $this->data['new_password'] = array(
+            'name'          => 'newpassword',
+            'id'            => 'newpassword',
+            'type'          => 'password',
+            'class'         => 'form-control',
+            'placeholder'   => sprintf(lang('change_password_new_password_placeholder'),$this->data['min_password_length']),
+            'pattern'       => '^.{'.$this->data['min_password_length'].'}.*$',
+        );
+        $this->data['new_password_confirm'] = array(
+            'name'          => 'newpassword_confirm',
+            'id'            => 'newpassword_confirm',
+            'type'          => 'password',
+            'class'         => 'form-control',
+            'placeholder'   => lang('change_password_new_password_confirm_placeholder'),
+            'pattern'       => '^.{'.$this->data['min_password_length'].'}.*$',
+        );
+        $this->data['user_id'] = array(
+            'name'  => 'user_id',
+            'id'    => 'user_id',
+            'type'  => 'hidden',
+            'value' => $user->id,
+        );
+        $this->data['form_attributes'] = array(
+            'class' => 'form-changepassword',
+            'id'    => 'changepassword_form',
+            'name'  => 'changepassword_form'
+        );
+        $this->data['submit_btn_attributes'] = array(
+            'class' => 'btn btn-primary btn-changepassword_submit',
+            'id'    => 'submit',
+            'name'  => 'submit',
+            'value' => lang('change_password_submit_btn')
+        );
+        $this->data['return_btn_attributes'] = array(
+            'class'     => 'btn btn-primary btn-changepassword_return btn-return',
+            'id'        => 'return',
+            'name'      => 'return',
+            'content'   => lang('change_password_return_btn')
+        );
 
 		if ($this->form_validation->run() == false)
 		{
-			//display the form
-			//set the flash data error message if there is one
-			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-            $this->data['title'] = $this->lang->line('company_name'). "Change Password";
-
-			$this->data['userIdentity']  = array(
-                'userId'            => $this->ion_auth->user()->row()->id,
-                'isAdmin'       => $this->ion_auth->is_admin()
-            );
-
-			$this->data['min_password_length'] = $this->config->item('min_password_length', 'ion_auth');
-			$this->data['old_password'] = array(
-				'name'          => 'oldpassword',
-				'id'            => 'oldpassword',
-				'type'          => 'password',
-                'class'         => 'form-control',
-                'placeholder'   => lang('change_password_old_password_placeholder')
-
-			);
-			$this->data['new_password'] = array(
-				'name'          => 'newpassword',
-				'id'            => 'newpassword',
-				'type'          => 'password',
-                'class'         => 'form-control',
-                'placeholder'   => sprintf(lang('change_password_new_password_placeholder'),$this->data['min_password_length']),
-				'pattern'       => '^.{'.$this->data['min_password_length'].'}.*$',
-			);
-			$this->data['new_password_confirm'] = array(
-				'name'          => 'newpassword_confirm',
-				'id'            => 'newpassword_confirm',
-				'type'          => 'password',
-                'class'         => 'form-control',
-                'placeholder'   => lang('change_password_new_password_confirm_placeholder'),
-				'pattern'       => '^.{'.$this->data['min_password_length'].'}.*$',
-			);
-			$this->data['user_id'] = array(
-				'name'  => 'user_id',
-				'id'    => 'user_id',
-				'type'  => 'hidden',
-				'value' => $user->id,
-			);
-            $this->data['form_attributes'] = array(
-                'class' => 'form-changepassword',
-                'id'    => 'changepassword_form',
-                'name'  => 'changepassword_form'
-            );
-            $this->data['submit_btn_attributes'] = array(
-                'class' => 'btn btn-primary btn-changepassword_submit',
-                'id'    => 'submit',
-                'name'  => 'submit',
-                'value' => lang('change_password_submit_btn')
-            );
-            $this->data['return_btn_attributes'] = array(
-                'class'     => 'btn btn-primary btn-changepassword_return btn-return',
-                'id'        => 'return',
-                'name'      => 'return',
-                'content'   => lang('change_password_return_btn')
-            );
 			//render
 			$this->_render_page('auth/change_password', $this->data);
 		}
@@ -222,7 +223,7 @@ class Auth extends CI_Controller {
 				//if the password was successfully changed
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
                 $this->_render_page('auth/change_password', $this->data);
-				$this->logout();
+				 $this->logout();
 			}
 			else
 			{

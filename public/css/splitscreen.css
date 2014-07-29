@@ -1,0 +1,58 @@
+.frame3x3 {
+    width: 1000px;
+    -webkit-transform: scale(0.34);
+    -webkit-transform-origin: 0 0;
+    border: 0px;
+}
+
+.oddDiv {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.evenDiv {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.container_row {
+    display: block;
+    overflow: hidden;
+}
+
+/*******INDEX.PHP***********************/
+.wrapper {
+    width: 1200px;
+}
+.split_screen_container {
+    margin: 0 auto;
+    padding-top: 19px;
+    width: 990px;
+    height: 470px;
+    background-color: pink;
+}
+
+.split_screen_div {
+    width: 320px;
+    height: 190px;
+    display: inline-block;
+    border: 0px solid black;
+    overflow: hidden;
+    margin: 2px 2px 2px;
+}
+
+.split_screen_row {
+    margin: auto;
+    width: 980px;
+    height: 220px;
+    display: block;
+}
+
+.split_screen_textarea {
+    margin: 12px;
+}
+
+#split_screen_submit {
+    float: right;
+    margin-top: 10px;
+}

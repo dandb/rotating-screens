@@ -170,7 +170,8 @@ $(document).ready(function()
                 url:"/dashboard/edit/",
                 data: {dashboardId: edit_dashboardId, description: edit_description, time_interval: edit_time_interval, category: edit_category, URL: edit_URL},
                 success:function(data){
-                    if(data == "1"){
+                    var response = $.parseJSON(data);
+                    if(response == "1"){
                         $("#edit_entry_close").hide();
                         $("#edit_entry_btn").hide();
                         $("#edit_loading").show();

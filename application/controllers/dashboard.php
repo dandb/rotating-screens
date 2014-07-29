@@ -252,22 +252,35 @@ class Dashboard extends CI_Controller {
                 $addNewEntryToTable = true;
 
                 //checking if host URL is valid
-                $hostURL = parse_url($URL,PHP_URL_HOST);
-                $ch = curl_init($hostURL);
-                curl_setopt($ch, CURLOPT_NOBODY, true);
-                curl_exec($ch);
-                $returnedCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-                if ($returnedCode == 0 || $returnedCode >=400) {
+//                $hostURL = parse_url($URL,PHP_URL_HOST);
+//                $ch = curl_init($hostURL);
+//                curl_setopt($ch, CURLOPT_URL,            'http://example.com/');
+//                curl_setopt($ch, CURLOPT_HEADER,         true);
+//                curl_setopt($ch, CURLOPT_NOBODY,         true);
+//                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+//                curl_setopt($ch, CURLOPT_TIMEOUT,        10);
+//
+//                //curl_setopt($ch, CURLOPT_NOBODY, true);
+//                $header = curl_exec($ch);
+//                $returnedCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-                    $this->data['message'] = "Please enter a valid URL.";
-                    $this->data['description'] = $_POST['add_description'];
-                    $this->data['time_interval'] = $_POST['add_time-interval'];
-                    $this->data['category'] = $_POST['add_category'];
-                    $addNewEntryToTable = false;
-                }
-                curl_close($ch);
+                //to check header status code
+               // $header = get_headers($URL,true);
 
+                //curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
+                //check the header status code then the returned code if header doesn't return 200
+                //if (!preg_match('/200/',$header[0])) {
+
+//                    if( true) {
+//                        $this->data['message'] = "Please enter a valid URL.".$returnedCode.var_dump($header);
+//                        $this->data['description'] = $_POST['add_description'];
+//                        $this->data['time_interval'] = $_POST['add_time-interval'];
+//                        $this->data['category'] = $_POST['add_category'];
+//                        $addNewEntryToTable = false;
+//                    }
+//                //}
+//                curl_close($ch);
 
                 if($addNewEntryToTable){
 
@@ -350,21 +363,21 @@ class Dashboard extends CI_Controller {
         );
 
         //checking if host URL is valid
-        $hostURL = parse_url($_POST['URL'],PHP_URL_HOST);
-        $ch = curl_init($hostURL);
-        curl_setopt($ch, CURLOPT_NOBODY, true);
-        curl_exec($ch);
-        $returnedCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
-        if ($returnedCode == 0 || $returnedCode >=400) {
-            echo "0";
-        } else {
-            echo "1";
-            $this->Dashboard_model->editEntryOf($dataOfDashboardEntry);
-        }
-
-
-
+        // @TODO: removing temporary until find a better solution to test url
+//        $hostURL = parse_url($_POST['URL'],PHP_URL_HOST);
+//        $ch = curl_init($hostURL);
+//        curl_setopt($ch, CURLOPT_NOBODY, true);
+//        curl_exec($ch);
+//        $returnedCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+//        curl_close($ch);
+//        if ($returnedCode == 0 || $returnedCode >=400) {
+//            echo "0";
+//        } else {
+//            echo "1";
+//            $this->Dashboard_model->editEntryOf($dataOfDashboardEntry);
+//        }
+        echo json_encode("1");
+        $this->Dashboard_model->editEntryOf($dataOfDashboardEntry);
 
     }
 
