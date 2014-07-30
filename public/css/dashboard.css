@@ -170,6 +170,17 @@ body {
     margin-left: 1px;
 }
 
+.message_label {
+    width: 55px;
+    height: 14px;
+    background-color: #C2D699;
+    color: #717d59;
+    font:12px arial,sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-left: 1px;
+}
+
 /***Start Dash *************/
 #start_dashboard_btn {
     display: block;
@@ -195,5 +206,10 @@ body {
     padding-left: 230px;
     border-color: transparent !important;
     box-shadow: none !important;
+}
 
+/****** Custom Message ********/
+#cke_add_message {
+    width: 800px;
+    margin: 10px 0 10px;
 }

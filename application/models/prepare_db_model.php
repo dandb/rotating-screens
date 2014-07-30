@@ -237,34 +237,44 @@ class Prepare_db_model extends CI_Model
     {
         $fields = array(
             'dashboard_id' => array(
-                'type' => 'INT',
-                'constraint' => 11,
-                'auto_increment' => TRUE
+                'type'          => 'INT',
+                'constraint'    => 11,
+                'auto_increment'=> TRUE
             ),
             'sort_id' => array(
-                'type' => 'INT',
-                'constraint' => 11,
+                'type'          => 'INT',
+                'constraint'    => 11,
             ),
             'description' => array(
-                'type' =>'VARCHAR',
-                'constraint' => '50',
+                'type'          =>'VARCHAR',
+                'constraint'    => '50',
             ),
             'URL' => array(
-                'type' =>'VARCHAR',
-                'constraint' => '250',
+                'type'          =>'VARCHAR',
+                'constraint'    => '250',
+                'null'          => true
             ),
-            'time_interval' => array(
-                'type' =>'INT',
-                'constraint' => 11,
+            'message' => array(
+                'type'          =>'VARCHAR',
+                'constraint'    => '2000',
+                'null'          => true
             ),
-            'category_id' => array(
-                'type' =>'INT',
-                'constraint' => 11,
+            'time_interval'     => array(
+                'type'          =>'INT',
+                'constraint'    => 11,
             ),
-            'office_location' => array(
-                'type' =>'INT',
-                'constraint' => 11,
+            'category_id'       => array(
+                'type'          =>'INT',
+                'constraint'    => 11,
             ),
+            'office_location'   => array(
+                'type'          =>'INT',
+                'constraint'    => 11,
+            ),
+            'activate'  => array(
+                'type'          => 'INT',
+                'constraint'    => 11
+            )
         );
 
         $this->dbforge->add_field($fields);

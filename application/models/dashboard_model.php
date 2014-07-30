@@ -65,6 +65,7 @@ class Dashboard_model extends CI_Model
         $data = array(
             'description'       => $dataOfDashboardEntry['edit_description'],
             'URL'               => $dataOfDashboardEntry['edit_URL'],
+            'message'               => $dataOfDashboardEntry['edit_message'],
             'time_interval'     => $dataOfDashboardEntry['edit_time-interval'],
             'category_id'       => $dataOfDashboardEntry['edit_category'],
         );
@@ -78,6 +79,15 @@ class Dashboard_model extends CI_Model
             ->result_array();
         $result = $query[0];
         return $result['description'];
+
+    }
+
+    public function returnMessage($dashboardID){
+        $query = $this->db->where('dashboard_id',$dashboardID)
+            ->get($this->lang->line('dashboard_table'))
+            ->result_array();
+        $result = $query[0];
+        return $result['message'];
 
     }
 }

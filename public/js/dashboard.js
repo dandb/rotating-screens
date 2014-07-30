@@ -1,8 +1,21 @@
 $(document).ready(function()
 {
+    /// FOR MESSAGE PURPOSES
+    CKEDITOR.replace('add_message');
+    CKEDITOR.replace('edit_message');
+    $("body").click(function(){
+
+       // $("#cke_add_message").hide();
+       // console.log(CKEDITOR.instances.add_message.getData());
+    });
+
+    //////////////////////////////////////////////////
+
+//    $("#addEntry_form")[0].reset();
     $("#add_website").show();
     $("#add_twitter").hide();
     $("#add_youtube").hide();
+    $("#add_message_div_container").hide();
     setTimeout(function(){$("#validate_url").fadeOut(1000);},5000);
     $("#dashboard_table").tableDnD();
 
@@ -20,28 +33,42 @@ $(document).ready(function()
 
     $("#start_dashboard_btn").click(function(){
         $.ajax({
-            url:"/dashboard/returningCurrentURLsAndTimeIntervalsAndDescriptions/",
+            url:"/dashboard/returningCurrentURLsAndMessagesAndTimeIntervalsAndDescriptions/",
             success:function(data){
                 data = JSON.parse(data);
                 var arrayOfURLs = data.urls;
+                var arrayOfMessages = data.messages;
+                var arrayOfCategories = data.categories;
                 var arrayOfTimeIntervals = data.times;
                 var arrayOfDescriptions = data.descriptions;
                 var arrayOfDashboardIds = data.dashboard_ids;
 
-                var newWindow = window.open("http://www.dandb.com/","",'height=800,width=1200');
+                console.log(arrayOfCategories);
+
+                var newWindow = window.open("","",'height=800,width=1200');
                 var i = 0;
 
                 function displayURLs() {
-                    newWindow.location.href=arrayOfURLs[i];
+                    if (arrayOfCategories[i] == "4") {
+                        newWindow.location.href = "dashboard/message/" + arrayOfDashboardIds[i];
+                    } else {
+                        newWindow.location.href = arrayOfURLs[i];
+                    }
+
                     setTimeout(displayWebsites, arrayOfTimeIntervals[i]*1000);
                     i++;
                     if(i>=arrayOfURLs.length) {i=0;}
                 }
 
                 function displayWebsites() {
-                    var cover_url = "dashboard/cover/" + arrayOfDashboardIds[i];
-                    newWindow.location.href= cover_url;
-                    setTimeout(displayURLs, 5000);
+                    if (arrayOfCategories[i] == "4") {
+                        newWindow.location.href= "dashboard/message/" + arrayOfDashboardIds[i];
+                    } else {
+                        var cover_url = "dashboard/cover/" + arrayOfDashboardIds[i];
+                        newWindow.location.href= cover_url;
+                    }
+
+                    setTimeout(displayURLs, 3000);
                 }
 
                 displayWebsites();
@@ -99,18 +126,29 @@ $(document).ready(function()
             $("#edit_website").show();
             $("#edit_twitter").hide();
             $("#edit_youtube").hide();
+            $("#cke_edit_message").hide();
         } else if($("#categoryId"+editID).children().text() =="Twitter"){
             $("#edit_twitter").val(($("#URL"+editID).text().trim()));
             $('#edit_category').val('2');
             $("#edit_website").hide();
             $("#edit_twitter").show();
             $("#edit_youtube").hide();
+            $("#cke_edit_message").hide();
         } else if($("#categoryId"+editID).children().text() =="Youtube"){
             $("#edit_youtube").val($("#URL"+editID).text().trim());
             $('#edit_category').val('3');
             $("#edit_website").hide();
             $("#edit_twitter").hide();
             $("#edit_youtube").show();
+            $("#cke_edit_message").hide();
+        } else if($("#categoryId"+editID).children().text() =="Message"){
+            CKEDITOR.instances.edit_message.setData($("#message"+editID).html().trim());
+            $('#edit_category').val('4');
+            $('#edit_category').prop('disabled','true');
+            $("#edit_website").hide();
+            $("#edit_twitter").hide();
+            $("#edit_youtube").hide();
+            $("#cke_edit_message").show();
         }
     });
 
@@ -143,11 +181,12 @@ $(document).ready(function()
             var edit_description = $("#edit_description").val();
             var edit_time_interval  = $("#edit_time-interval").val();
 
-            if($("#edit_category").val() ==1){
+            if($("#edit_category").val() ==1) {
                 var edit_category = 1;
                 var edit_URL = $("#edit_website").val();
+                var edit_message = null;
             }
-            else if ($("#edit_category").val() == 2){
+            else if ($("#edit_category").val() == 2) {
                 var edit_category = 2;
                 var twitterKeyword =  $("#edit_twitter").val();
                 //modifying twitter keyword
@@ -156,19 +195,26 @@ $(document).ready(function()
                 twitterKeyword = twitterKeyword.replace("#","%23");
                 twitterKeyword = "https://twitter.com/search?q=" + twitterKeyword;
                 var edit_URL = twitterKeyword;
+                var edit_message = null;
             }
-            else if ($("#edit_category").val() == 3){
+            else if ($("#edit_category").val() == 3) {
                 var edit_category = 3;
                 var edit_URL = $("#edit_youtube").val();
 
                 edit_URL += "&autoplay=1";
                 edit_URL = edit_URL.replace("watch?v=","v/");
+                var edit_message = null;
+            } else if ($("#edit_category").val() == 4) {
+                var edit_category = 4;
+                var edit_URL = null;
+                var edit_message = CKEDITOR.instances.edit_message.getData();
+
             }
 
             $.ajax({
                 type: "POST",
                 url:"/dashboard/edit/",
-                data: {dashboardId: edit_dashboardId, description: edit_description, time_interval: edit_time_interval, category: edit_category, URL: edit_URL},
+                data: {dashboardId: edit_dashboardId, description: edit_description, time_interval: edit_time_interval, category: edit_category, URL: edit_URL, message: edit_message},
                 success:function(data){
                     var response = $.parseJSON(data);
                     if(response == "1"){
@@ -224,20 +270,34 @@ $(document).ready(function()
     $("#add_category").change(function()
     {
         if($("#add_category").val() ==1) {
+            $("#add_website").prop('disabled', false);
             $("#add_website").show();
             $("#add_twitter").hide();
             $("#add_youtube").hide();
+            $("#add_message_div_container").hide();
         }
         else if ($("#add_category").val() == 2) {
+            $("#add_twitter").prop('disabled', false);
             $("#add_website").hide();
             $("#add_twitter").show();
             $("#add_youtube").hide();
+            $("#add_message_div_container").hide();
         }
         else if ($("#add_category").val() == 3) {
+            $("#add_youtube").prop('disabled', false);
             $("#add_website").hide();
             $("#add_twitter").hide();
             $("#add_youtube").show();
+            $("#add_message_div_container").hide();
         }
+        else if ($("#add_category").val() == 4) {
+            $("#add_website").prop('disabled', true);
+            $("#add_twitter").prop('disabled', true);
+            $("#add_youtube").prop('disabled', true);
+            $("#add_message_div_container").show();
+        }
+
+
     });
 
 

@@ -3,6 +3,8 @@
 class Dashboard extends CI_Controller {
 
     private $_updatedDashboardURLs;
+    private $_updatedDashboardMessages;
+    private $_updatedDashboardCategories;
     private $_updatedDashboardTimeIntervals;
     private $_updatedDashboardIds;
 
@@ -67,7 +69,8 @@ class Dashboard extends CI_Controller {
                 'id'            => 'add_description',
                 'class'         => 'form-control',
                 'type'          => 'text',
-                'value'         => (isset($_POST['add_description']) ? $_POST['add_description'] : ""),
+                'value'         => '',
+//                'value'         => (isset($_POST['add_description']) ? $_POST['add_description'] : ""),
                 'placeholder'   => 'Description'
             );
             $this->data['add_website'] = array(
@@ -94,13 +97,25 @@ class Dashboard extends CI_Controller {
                 'id'            => 'add_time-interval',
                 'class'         => 'form-control time-interval_add',
                 'type'          => 'text',
+//                'value'         => (isset($_POST['add_description']) ? $_POST['add_time-interval'] : ""),
                 'value'         => (isset($_POST['add_description']) ? $_POST['add_time-interval'] : ""),
                 'placeholder'   => 'Time(sec)'
+            );
+            $this->data['add_message'] = array(
+                'name'          => 'add_message',
+                'id'            => 'add_message',
+                'class'         => 'form-control message_add',
+                'type'          => 'textarea',
+                'rows'          => '10',
+                'cols'          => '80'
+//                'value'         => (isset($_POST['add_description']) ? $_POST['add_time-interval'] : ""),
+//                'value'         => (isset($_POST['add_description']) ? $_POST['add_time-interval'] : ""),
             );
             $this->data['add_category'] = array(
                 '1' => 'Website',
                 '2' => 'Twitter',
                 '3' => 'Youtube',
+                '4' => 'Custom Message'
             );
             $this->data['add_select_category'] = (isset($_POST['add_category']) ? $_POST['add_category'] : "1");
             $this->data['add_locationAll'] = array(
@@ -190,7 +205,15 @@ class Dashboard extends CI_Controller {
                 'class'         => 'form-control youtube_edit',
                 'type'          => 'text',
                 'placeholder'   => 'Youtube'
+            );$this->data['edit_message'] = array(
+                'name'          => 'edit_message',
+                'id'            => 'edit_message',
+                'class'         => 'form-control message_edit',
+                'type'          => 'textarea',
+                'rows'          => '10',
+                'cols'          => '80'
             );
+
             $this->data['edit_time_interval'] = array(
                 'name'          => 'edit_time-interval',
                 'id'            => 'edit_time-interval',
@@ -202,21 +225,24 @@ class Dashboard extends CI_Controller {
                 '1' => 'Website',
                 '2' => 'Twitter',
                 '3' => 'Youtube',
+                '4' => 'Custom Message'
             );$this->data['edit_category_attribute'] = "class= 'form-control category-attribute_edit' id='edit_category'";
 
             /**END:Edit-Form Attributes *******************************************/
 
-            //form validation - PHP side
+            //form validation\
             $this->form_validation->set_rules("add_description","Description","required");
             $this->form_validation->set_rules("add_time-interval","Time interval","required|integer");
 
             if(isset($_POST['add_category'])){
-                if($_POST['add_category']==1) {
+                if($_POST['add_category']== 1) {
                     $this->form_validation->set_rules("add_website","Website","required");
-                } else if($_POST['add_category']==2) {
+                } else if($_POST['add_category']== 2) {
                     $this->form_validation->set_rules("add_twitter","Twitter keyword","required");
-                } else if($_POST['add_category']==3) {
+                } else if($_POST['add_category']== 3) {
                     $this->form_validation->set_rules("add_youtube","Youtube","required");
+                } else if($_POST['add_category']== 4) {
+                    //$this->form_validation->set_rules("add_youtube","Youtube","required");
                 }
             }
             if ($this->form_validation->run() == FALSE){
@@ -229,24 +255,38 @@ class Dashboard extends CI_Controller {
             else {
                 //adding to db table
                 if($_POST['add_category'] == 1){
+
                     $URL = $_POST['add_website'];
                     if(strpos($URL,"http") !== 0){
                         $URL = "http://" . $URL;
                     }
 
+                    $message = null;
+
                 } else if($_POST['add_category'] == 2) {
+
                     $twitterKeyword = str_replace("@","%40",$_POST['add_twitter']);
                     $twitterKeyword = str_replace(" ","%20",$twitterKeyword);
                     $twitterKeyword = str_replace("#","%23",$twitterKeyword);
                     $twitterKeyword = $this->lang->line('twitter_baseSearchURL') . $twitterKeyword;
 
                     $URL = $twitterKeyword;
-                }else if($_POST['add_category'] == 3) {
+
+                    $message = null;
+                } else if($_POST['add_category'] == 3) {
+
                     $URL = $_POST['add_youtube'] . "&autoplay=1";
                     $URL = str_replace("watch?v=","v/",$URL);
                     if(strpos($URL,"http") !== 0){
                         $URL = "http://" . $URL;
                     }
+
+                    $message = null;
+                } else if($_POST['add_category'] == 4) {
+
+                    $URL = null;
+                    $message = $_POST['add_message'];
+
                 }
 
                 $addNewEntryToTable = true;
@@ -288,6 +328,7 @@ class Dashboard extends CI_Controller {
                         'sort_id' => $this->Dashboard_model->getMaxSortId()+1,
                         'description'       => $_POST['add_description'],
                         'URL'               => $URL,
+                        'message'           => $message,
                         'time_interval'     => $_POST['add_time-interval'],
                         'category_id'          => $_POST['add_category'],
                         'office_location'   => $this->data['userOfficeLocation']
@@ -355,11 +396,12 @@ class Dashboard extends CI_Controller {
     public function edit()
     {
         $dataOfDashboardEntry = array(
-            'edit_description' => $_POST['description'],
-            'edit_URL' => $_POST['URL'],
-            'edit_time-interval' => $_POST['time_interval'],
-            'edit_category' => $_POST['category'],
-            'edit_dashboardId'=> $_POST['dashboardId']
+            'edit_description'      => $_POST['description'],
+            'edit_URL'              => $_POST['URL'],
+            'edit_message'          => $_POST['message'],
+            'edit_time-interval'    => $_POST['time_interval'],
+            'edit_category'         => $_POST['category'],
+            'edit_dashboardId'      => $_POST['dashboardId']
         );
 
         //checking if host URL is valid
@@ -381,13 +423,16 @@ class Dashboard extends CI_Controller {
 
     }
 
-    public function returningCurrentURLsAndTimeIntervalsAndDescriptions() {
+    public function returningCurrentURLsAndMessagesAndTimeIntervalsAndDescriptions() {
          $URLs = explode(',',$this->_updatedDashboardURLs);
+         $Messages = explode(',', $this->_updatedDashboardMessages);
+         $Categories = explode(',', $this->_updatedDashboardCategories);
          $TimeIntervals = explode(',',$this->_updatedDashboardTimeIntervals);
          $DashboardIds = explode(',',$this->_updatedDashboardIds);
 
 
-         echo json_encode(array('urls' => $URLs, 'times' => $TimeIntervals, 'dashboard_ids' => $DashboardIds));
+         echo json_encode(array('urls' => $URLs, 'messages'=> $Messages,
+             'categories' => $Categories, 'times' => $TimeIntervals, 'dashboard_ids' => $DashboardIds));
     }
 
     private function updateDashboardEntries() {
@@ -397,6 +442,8 @@ class Dashboard extends CI_Controller {
             for($i=0;$i<count($dashboardEntries);$i++)
             {
                 $arrayOfURLs[$i] = $dashboardEntries[$i]['URL'];
+                $arrayOfMessages[$i] = $dashboardEntries[$i]['message'];
+                $arrayOfCategories[$i] = $dashboardEntries[$i]['category_id'];
                 $arrayOfTimesIntervals[$i] = $dashboardEntries[$i]['time_interval'];
                 $arrayOfDescriptions[$i] = $dashboardEntries[$i]['description'];
                 $arrayOfDashboardIds[$i] = $dashboardEntries[$i]['dashboard_id'];
@@ -404,6 +451,8 @@ class Dashboard extends CI_Controller {
 
             }
             $this->_updatedDashboardURLs = implode(',',$arrayOfURLs);
+            $this->_updatedDashboardMessages = implode(',',$arrayOfMessages);
+            $this->_updatedDashboardCategories = implode(',',$arrayOfCategories);
             $this->_updatedDashboardTimeIntervals = implode(',',$arrayOfTimesIntervals);
             $this->_updatedDashboardIds = implode(',',$arrayOfDashboardIds);
         }
@@ -412,6 +461,15 @@ class Dashboard extends CI_Controller {
     public function cover($dashboardId) {
         $this->data['cover_title'] = $this->Dashboard_model->returnDescription($dashboardId);
         $this->load->view('dashboard/cover',$this->data);
+    }
+
+
+    public function message($dashboardID) {
+        $this->load->view('partials/message_header');
+       // $this->data['message'] = "<br>TEST</br>";
+
+        $this->data['message'] = $this->Dashboard_model->returnMessage($dashboardID);
+        $this->load->view('dashboard/message',$this->data);
     }
 
 }

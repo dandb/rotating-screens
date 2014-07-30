@@ -1,0 +1,1 @@
+<img class="logo_header" src="<?php echo base_url();?>public/images/logo.jpg"/>

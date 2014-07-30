@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="<?php echo base_url();?>public/css/dashboard.css" />
     <link rel="stylesheet" href="<?php echo base_url();?>public/css/header.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="<?php echo base_url();?>public/ckeditor/ckeditor.js"></script>
     <script src="<?php echo base_url();?>public/js/dashboard.js"></script>
     <script src="<?php echo base_url();?>public/js/bootstrap.js"></script>
     <script src="<?php echo base_url();?>public/js/jquery.tablednd.js"></script>
@@ -60,6 +61,8 @@
                     </div>
                     <div class="form-group"><?php echo form_input($add_time_interval);?></div>
 
+                    <div class="form-group" id ="add_message_div_container"><?php echo form_textarea($add_message);?></div>
+
 
                     <div class="form-group"><?php echo form_submit($add_submit_btn_attributes,'Add Entry');?></div>
 
@@ -97,6 +100,8 @@
                 $row['URL'] =str_replace("%23","#",$row['URL']);
             } else if($row['category_id'] == 3){
                 $category="Youtube";
+            } else if($row['category_id'] == 4){
+                $category="Message";
             }
         ?>
             <tr id ="<?php echo $row['dashboard_id'];?>" class="dashboard_row" data-sortid="<?php echo $row['sort_id'];?>">
@@ -108,7 +113,16 @@
                 </td>
 
                 <td id="URL<?php echo $row['dashboard_id'];?>" class="url_col" data-entryid="<?php echo $row['dashboard_id'];?>">
-                    <?php echo $row['URL'];?>
+                    <?php
+
+                    if (strcmp($category, "Message") == 0) {
+
+                        echo "<span><a href='". base_url()  ."dashboard/message/". $row['dashboard_id'] ."' target='_blank'>Preview Message</a></span><span style='display:none;' id='message". $row['dashboard_id'] ."'>". $row['message']."</span>";
+                    } else {
+                        echo $row['URL'];
+                    }
+
+?>
                 </td>
 
                 <td id="description<?php echo $row['dashboard_id'];?>" class="description_col" data-entryid="<?php echo $row['dashboard_id'];?>">
@@ -158,6 +172,7 @@
                             <?php echo form_input($edit_website);?>
                             <?php echo form_input($edit_twitter);?>
                             <?php echo form_input($edit_youtube);?>
+                            <?php echo form_textarea($edit_message);?>
                         </div>
                         <div class="form-group"><?php echo form_input($edit_time_interval);?></div>
                     <?php echo form_close();?>
