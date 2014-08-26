@@ -19,4 +19,4 @@ This project uses Codeigniter framework in addition to Ion Auth and CKEditor plu
 
 ## Acknowledgement 
 
-_DandB Cred Corp. would like to thank you for your interest in this project._
+_Dun & Bradstreet Credibility Corp. would like to thank you for your interest in this project.  We are always hiring amazing engineers – http://careers.dandb.com_
