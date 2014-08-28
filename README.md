@@ -17,6 +17,9 @@ This project uses Codeigniter framework in addition to Ion Auth and CKEditor plu
 3. Set up your database config to work with this project
 4. Adjust this project to your desired needs
 
+## Demo
+http://apburks.github.io/rotating-screens
+
 ## Acknowledgement 
 
 _Dun & Bradstreet Credibility Corp. would like to thank you for your interest in this project.  We are always hiring amazing engineers – http://careers.dandb.com_
